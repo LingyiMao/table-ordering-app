@@ -1,0 +1,143 @@
+$primary-color: #efedec;
+$primary-font: "roboto", sans-serif;
+
+
+body {
+    background-color: $primary-color;
+    font-family: $primary-font;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 1em;
+    height: 100vh;
+  }
+  
+  header {
+    .logo {
+      img {
+        width: 120px;
+        height: 100px;
+      }
+    }
+  }
+
+  main {
+      padding: 0 1em;
+      .shopping-cart {
+          width: 70%;
+          padding: 0 1.5em 0 0;
+          h3 {
+              margin: 0;
+          }
+          img {
+              width: 120px;
+              height: 100px;
+          }
+          .first-item, & .second-item {
+              padding: 2em 0 1em 0;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+          }
+      }
+      .text {
+          padding: 1.5em 0 4em 0;
+          background-color: rgb(227, 226, 226);
+          text-align: center;
+          .social-media {
+              padding: 1em 0;
+              width: 70%;
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              margin: auto;
+              a:nth-child(3) {
+                  color: rgb(62, 62, 243);
+              }
+              a {
+                  &:hover {
+                      color: red;
+                  }
+                  &:active {
+                      color: goldenrod;
+                  }
+              }
+          }
+          p:nth-child(3) {
+              color: goldenrod;
+          }
+      }
+  }
+
+  footer {
+    .footerbar {
+        display: flex;
+        justify-content: space-around;
+    
+        margin: auto;
+        width: 70%;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 1em;
+        a {
+          background-color:rgb(207, 204, 204) ;
+          padding: 0.5em;
+          border-radius: 50%;
+          color: red;
+          &:hover {
+            background-color: red;
+            color: black;
+          }
+          &:active {
+              background-color: goldenrod;
+          }
+        }
+      }
+  }
+
+
+
+  @media (min-width: 800px) {
+    header {
+      .logo {
+        img {
+          width: 200px;
+          height: 140px;
+        }
+      }
+    }
+
+    main {
+        display: inline-flex;
+        width: 100%;
+        .shopping-cart {
+            width: 50%;
+            h3 {
+                font-size: 1.5em;
+            }
+            span {
+                font-size: 1.2em;
+            }
+        }
+        .text {
+            width: 50%;
+            padding: 3em 1em 1em 0;
+            p {
+                font-size: 1.2em;
+            }
+            .social-media {
+                a {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+
+    footer {
+        a {
+            i {
+                font-size: 1.2em;
+            }
+        }
+    }
+  }

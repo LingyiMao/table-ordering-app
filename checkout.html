@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/1d19d1619d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./checkout.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="./photos/Daruma.png" alt="logo" />
+        </div>
+    </header>
+    <main>
+        <div class="shopping-cart">
+            <div class="title"><h3>My Order</h3></div>
+            <div class="items">
+              <div class="first-item">
+                <img src="./photos/sushi 1.png" alt="sushi">
+                <span>$8.00</span>
+                <div class="quantity-selector">
+                  <div class="quantity-selector__number">
+                    <input type="button" value="-" class="minus" /><input
+                      type="number"
+                      step="1"
+                      min="1"
+                      max=""
+                      name="quantity"
+                      value="1"
+                      title="Qty"
+                      class="input-text qty text"
+                      size="4"
+                      pattern=""
+                      inputmode=""
+                    /><input type="button" value="+" class="plus" />
+                  </div>
+                </div>
+              </div>
+              <div class="second-item">
+                <img src="./photos/sushi 2.png" alt="sushi">
+                <span>$8.00</span>
+                <div class="quantity-selector">
+                  <div class="quantity-selector__number">
+                    <input type="button" value="-" class="minus" /><input
+                      type="number"
+                      step="1"
+                      min="1"
+                      max=""
+                      name="quantity"
+                      value="1"
+                      title="Qty"
+                      class="input-text qty text"
+                      size="4"
+                      pattern=""
+                      inputmode=""
+                    /><input type="button" value="+" class="plus" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="price">
+              <h3>Total:</h3>
+              <h3>$16.00</h3>
+            </div>
+        </div>
+        <div class="payment">
+            <h3>Payment Method</h3>
+            <div class="cardoption">
+                <div class="option1">
+                    <input type="radio" name="radio-btn" id="radio1"><p>pay at the counter</p>
+                </div>
+                <div class="option2">
+                    <input type="radio" name="radio-btn" id="radio2"><img src="./photos/payment.jpeg" alt="payment">
+                </div>
+            </div>
+            <div class="carddetail">
+                <div>
+                    <label>card number:</label><input type="text" maxlength="16" class="form-control" placeholder="xxxx-xxxx-xxxx-xxxx" name="">
+                </div>
+                <div>
+                    <label>card name:</label><input type="text" class="form-control" name="">
+                </div>
+                <div>
+                    <label>expiry date:</label>
+                    <div class="expiry-date">
+                        <select name="" id="" class="month-input">
+                            <option value="month" selected disabled></option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select name="" id="" class="year-input">
+                            <option value="year" selected disabled></option>
+                            <option value="2017">201</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="CVC">
+                    <label>CVC/CW/CID:</label><input type="text" maxlength="3" class="form-control1" name=""><p>what is CVC/CW/CID?</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="backbutton">
+            <a href="./orderpage.html"><i class="fas fa-arrow-alt-circle-left fa-lg"></i> Back to Order</a>
+        </div>
+        <div class="footerbar-box">
+            <div class="footerbar">
+                <div class="homebutton" style="font-size: 1.3em;">
+                  <a href="./"><i class="fas fa-home"></i></a>
+                </div>
+                <div class="search" style="font-size: 1.3em;">
+                  <a href="#"><i class="fas fa-search"></i></a>
+                </div>
+                <div class="cart" id="cart" style="font-size: 1.3em;">
+                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+                <div class="help" style="font-size: 1.3em;">
+                  <a href="./help.html"><i class="fas fa-bell"></i></a>
+                </div>
+            </div>
+            <div class="order"><a href="./finalpage.html">Order</a></div>
+        </div>
+    </footer>
+</body>
+</html>

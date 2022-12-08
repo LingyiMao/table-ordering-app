@@ -1,0 +1,118 @@
+body {
+  background-color: #efedec;
+  font-family: "roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 1em;
+  height: 100vh;
+}
+
+header .logo img {
+  width: 120px;
+  height: 100px;
+}
+
+main {
+  padding: 0 1em;
+}
+main .shopping-cart {
+  width: 70%;
+  padding: 0 1.5em 0 0;
+}
+main .shopping-cart h3 {
+  margin: 0;
+}
+main .shopping-cart img {
+  width: 120px;
+  height: 100px;
+}
+main .shopping-cart .first-item, main .shopping-cart .second-item {
+  padding: 2em 0 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .text {
+  padding: 1.5em 0 4em 0;
+  background-color: rgb(227, 226, 226);
+  text-align: center;
+}
+main .text .social-media {
+  padding: 1em 0;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+main .text .social-media a:nth-child(3) {
+  color: rgb(62, 62, 243);
+}
+main .text .social-media a:hover {
+  color: red;
+}
+main .text .social-media a:active {
+  color: goldenrod;
+}
+main .text p:nth-child(3) {
+  color: goldenrod;
+}
+
+footer .footerbar {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 70%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1em;
+}
+footer .footerbar a {
+  background-color: rgb(207, 204, 204);
+  padding: 0.5em;
+  border-radius: 50%;
+  color: red;
+}
+footer .footerbar a:hover {
+  background-color: red;
+  color: black;
+}
+footer .footerbar a:active {
+  background-color: goldenrod;
+}
+
+@media (min-width: 800px) {
+  header .logo img {
+    width: 200px;
+    height: 140px;
+  }
+
+  main {
+    display: inline-flex;
+    width: 100%;
+  }
+  main .shopping-cart {
+    width: 50%;
+  }
+  main .shopping-cart h3 {
+    font-size: 1.5em;
+  }
+  main .shopping-cart span {
+    font-size: 1.2em;
+  }
+  main .text {
+    width: 50%;
+    padding: 3em 1em 1em 0;
+  }
+  main .text p {
+    font-size: 1.2em;
+  }
+  main .text .social-media a {
+    font-size: 1.5em;
+  }
+
+  footer a i {
+    font-size: 1.2em;
+  }
+}/*# sourceMappingURL=finalpage.css.map */

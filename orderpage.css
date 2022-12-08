@@ -1,0 +1,404 @@
+body {
+  font-family: "roboto", sans-serif;
+  background-color: #efedec;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 1em;
+  height: 100vh;
+}
+
+header .logo img {
+  width: 120px;
+  height: 90px;
+}
+header .photos {
+  display: flex;
+  background-color: rgb(224, 224, 224);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+header .photos .slider {
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+}
+header .photos .slider .slides {
+  display: flex;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .photos .slider .slides .photowrapper {
+  width: 0;
+  height: 300px;
+  border-radius: 10px;
+  transition: all 2s ease;
+}
+header .photos .slider .slides .active-image {
+  width: 100%;
+}
+header .dots {
+  display: flex;
+  justify-content: center;
+  margin: 3px;
+}
+header .dots label {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: solid 1px red;
+  cursor: pointer;
+  margin: 5px;
+}
+header .dots label:hover {
+  background: red;
+}
+
+main {
+  padding-top: 2em;
+}
+main .menu {
+  gap: 2em;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  overflow: scroll;
+}
+main .menu div {
+  background-color: #efedec;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+}
+main .menu div:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  transform: translateY(-20px);
+}
+main .menu div button {
+  font-family: "roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+main .menu div button::after {
+  height: 3px;
+  border-radius: 10px;
+  background-color: red;
+  transition: 0.4s transform;
+  content: "";
+  position: absolute;
+  width: 80%;
+  bottom: 0;
+  transform: scaleX(0);
+}
+main .menu div button:active::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+main .menu img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+main .menu-sushi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 3em 1em;
+}
+main .menu-sushi__card {
+  margin: auto;
+  margin-bottom: 2em;
+  width: 200px;
+  height: 100%;
+  text-align: center;
+  box-shadow: 5px 5px 15px gray;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+main .menu-sushi__card h3 {
+  font-size: 1em;
+}
+main .menu-sushi__card p {
+  font-size: 0.9em;
+}
+main .menu-sushi__card .quantity-button {
+  display: flex;
+  justify-content: space-between;
+}
+main .menu-sushi__card .quantity-button input {
+  text-align: center;
+  border: none;
+  width: 30px;
+}
+main .menu-sushi__card .quantity-button input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+main .menu-sushi__card .quantity-button .minus {
+  cursor: pointer;
+  background-color: rgb(207, 204, 204);
+  border: none;
+  border-radius: 50px;
+}
+main .menu-sushi__card .quantity-button .minus:hover {
+  background-color: red;
+  color: black;
+}
+main .menu-sushi__card .quantity-button .minus:active {
+  background-color: black;
+  color: white;
+}
+main .menu-sushi__card .quantity-button .plus {
+  cursor: pointer;
+  background-color: rgb(207, 204, 204);
+  border: none;
+  border-radius: 50px;
+}
+main .menu-sushi__card .quantity-button .plus:hover {
+  background-color: red;
+  color: black;
+}
+main .menu-sushi__card .quantity-button .plus:active {
+  background-color: black;
+  color: white;
+}
+main .menu-sushi__card .quantity-button .add-button button {
+  width: 4em;
+  cursor: pointer;
+  background-color: rgb(207, 204, 204);
+  border: none;
+  border-radius: 50px;
+}
+main .menu-sushi__card .quantity-button .add-button button:hover {
+  background-color: red;
+  color: black;
+}
+main .menu-sushi__card .quantity-button .add-button button:active {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+}
+footer .shopping-cart {
+  text-align: left;
+  padding: 0 1em;
+  position: fixed;
+  bottom: -100%;
+  left: 1em;
+  right: 1em;
+  background-color: white;
+  border-radius: 10px;
+}
+footer .shopping-cart h3 {
+  font-size: 1em;
+}
+footer .shopping-cart span {
+  font-size: 0.9em;
+}
+footer .shopping-cart .items img {
+  width: 120px;
+  height: 100px;
+}
+footer .shopping-cart .items .first-item, footer .shopping-cart .items .second-item {
+  padding: 1.5em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .shopping-cart .items .first-item .quantity-selector, footer .shopping-cart .items .second-item .quantity-selector {
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+}
+footer .shopping-cart .items .first-item .quantity-selector__number, footer .shopping-cart .items .second-item .quantity-selector__number {
+  display: flex;
+  flex-direction: column;
+}
+footer .shopping-cart .items .first-item .quantity-selector__number input, footer .shopping-cart .items .second-item .quantity-selector__number input {
+  text-align: center;
+  border: none;
+  width: 25px;
+}
+footer .shopping-cart .items .first-item .quantity-selector__number input::-webkit-inner-spin-button, footer .shopping-cart .items .second-item .quantity-selector__number input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+footer .shopping-cart .items .first-item .quantity-selector__number .minus, footer .shopping-cart .items .second-item .quantity-selector__number .minus {
+  cursor: pointer;
+  background-color: rgb(207, 204, 204);
+  border: none;
+  border-radius: 50px;
+}
+footer .shopping-cart .items .first-item .quantity-selector__number .minus:hover, footer .shopping-cart .items .second-item .quantity-selector__number .minus:hover {
+  background-color: red;
+  color: black;
+}
+footer .shopping-cart .items .first-item .quantity-selector__number .minus:active, footer .shopping-cart .items .second-item .quantity-selector__number .minus:active {
+  background-color: black;
+  color: white;
+}
+footer .shopping-cart .items .first-item .quantity-selector__number .plus, footer .shopping-cart .items .second-item .quantity-selector__number .plus {
+  cursor: pointer;
+  background-color: rgb(207, 204, 204);
+  border: none;
+  border-radius: 50px;
+}
+footer .shopping-cart .items .first-item .quantity-selector__number .plus:hover, footer .shopping-cart .items .second-item .quantity-selector__number .plus:hover {
+  background-color: red;
+  color: black;
+}
+footer .shopping-cart .items .first-item .quantity-selector__number .plus:active, footer .shopping-cart .items .second-item .quantity-selector__number .plus:active {
+  background-color: black;
+  color: white;
+}
+footer .shopping-cart .items .first-item .quantity-selector i, footer .shopping-cart .items .second-item .quantity-selector i {
+  cursor: pointer;
+  align-self: center;
+  padding: 0.5em;
+}
+footer .shopping-cart .items .first-item .quantity-selector i:hover, footer .shopping-cart .items .second-item .quantity-selector i:hover {
+  color: red;
+}
+footer .shopping-cart .items .first-item .quantity-selector i:active, footer .shopping-cart .items .second-item .quantity-selector i:active {
+  color: white;
+}
+footer .shopping-cart .price {
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+footer .shopping-cart .checkout {
+  text-align: center;
+  height: 50px;
+}
+footer .shopping-cart .checkout a {
+  font-size: 0.9em;
+  width: 40%;
+  border-radius: 20px;
+  padding: 0.5em;
+  background-color: red;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-family: "roboto", sans-serif;
+}
+footer .shopping-cart .checkout a:hover {
+  background-color: black;
+  color: white;
+}
+footer .shopping-cart .checkout a:active {
+  background-color: goldenrod;
+}
+footer .shopping-cart.active {
+  bottom: 3.5em;
+  transition: 0.4s;
+}
+footer .footerbar {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 70%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1em;
+}
+footer .footerbar a {
+  background-color: rgb(207, 204, 204);
+  padding: 0.5em;
+  border-radius: 100px;
+  color: red;
+}
+footer .footerbar a:hover {
+  background-color: red;
+  color: black;
+}
+footer .footerbar a:active {
+  background-color: goldenrod;
+}
+
+@media (min-width: 800px) {
+  header .logo img {
+    width: 150px;
+    height: 110px;
+  }
+  header .photos {
+    width: 80%;
+    position: absolute;
+    right: 3%;
+    top: 6%;
+    background-color: #efedec;
+  }
+  header .photos .slides {
+    height: 300px;
+  }
+  main {
+    padding: 0;
+  }
+  main .menu {
+    display: block;
+    float: left;
+    position: relative;
+    left: 3%;
+  }
+  main .menu div button {
+    margin: auto;
+    font-size: 1.1em;
+  }
+  main .menu div button::after {
+    height: 100%;
+    width: 3px;
+    top: 0;
+    right: 0;
+    transform: scaleY(0);
+  }
+  main .menu div buttonactive::after {
+    transform-origin: top right;
+    transform: scaleY(1);
+  }
+  main .menu-sushi {
+    position: absolute;
+    left: 20%;
+    top: 400px;
+  }
+  main .menu-sushi h3 {
+    font-size: 1.2em;
+  }
+  main .menu-sushi p {
+    font-size: 1em;
+  }
+  footer a i {
+    font-size: 1.2em;
+  }
+  footer .shopping-cart {
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    left: -100%;
+    top: 0;
+  }
+  footer .shopping-cart h3 {
+    font-size: 1.5em;
+  }
+  footer .shopping-cart span {
+    font-size: 1.2em;
+  }
+  footer .shopping-cart .checkout {
+    padding-top: 7em;
+  }
+  footer .shopping-cart .checkout a {
+    font-size: 1.1em;
+  }
+  footer .shopping-cart.active {
+    left: 0;
+    transition: 0.5s linear;
+  }
+}/*# sourceMappingURL=orderpage.css.map */

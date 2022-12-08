@@ -1,0 +1,227 @@
+body {
+  font-family: "roboto", sans-serif;
+  background-color: #efedec;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 1em;
+  height: 100vh;
+}
+
+header .logo img {
+  width: 120px;
+  height: 100px;
+}
+
+main h3 {
+  font-size: 1em;
+}
+main label {
+  font-size: 0.8em;
+}
+main .shopping-cart {
+  text-align: left;
+  padding: 0 1em;
+  border-radius: 10px;
+}
+main .shopping-cart .items img {
+  width: 120px;
+  height: 100px;
+}
+main .shopping-cart .items .first-item, main .shopping-cart .items .second-item {
+  padding: 1.5em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .shopping-cart .items .first-item .quantity-selector, main .shopping-cart .items .second-item .quantity-selector {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+main .shopping-cart .items .first-item .quantity-selector__number, main .shopping-cart .items .second-item .quantity-selector__number {
+  display: flex;
+  flex-direction: column;
+}
+main .shopping-cart .items .first-item .quantity-selector__number input, main .shopping-cart .items .second-item .quantity-selector__number input {
+  background-color: #efedec;
+  text-align: center;
+  border: none;
+  width: 20px;
+}
+main .shopping-cart .items .first-item .quantity-selector__number input::-webkit-inner-spin-button, main .shopping-cart .items .second-item .quantity-selector__number input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+main .shopping-cart .items .first-item .quantity-selector__number .minus, main .shopping-cart .items .second-item .quantity-selector__number .minus {
+  cursor: pointer;
+  background-color: rgb(207, 204, 204);
+  border: none;
+  border-radius: 50px;
+}
+main .shopping-cart .items .first-item .quantity-selector__number .minus:hover, main .shopping-cart .items .second-item .quantity-selector__number .minus:hover {
+  background-color: red;
+  color: black;
+}
+main .shopping-cart .items .first-item .quantity-selector__number .minus:active, main .shopping-cart .items .second-item .quantity-selector__number .minus:active {
+  background-color: black;
+  color: white;
+}
+main .shopping-cart .items .first-item .quantity-selector__number .plus, main .shopping-cart .items .second-item .quantity-selector__number .plus {
+  cursor: pointer;
+  background-color: rgb(207, 204, 204);
+  border: none;
+  border-radius: 50px;
+}
+main .shopping-cart .items .first-item .quantity-selector__number .plus:hover, main .shopping-cart .items .second-item .quantity-selector__number .plus:hover {
+  background-color: red;
+  color: black;
+}
+main .shopping-cart .items .first-item .quantity-selector__number .plus:active, main .shopping-cart .items .second-item .quantity-selector__number .plus:active {
+  background-color: black;
+  color: white;
+}
+main .shopping-cart .items .first-item .quantity-selector i, main .shopping-cart .items .second-item .quantity-selector i {
+  cursor: pointer;
+  align-self: center;
+  padding: 0.5em;
+}
+main .shopping-cart .items .first-item .quantity-selector i:hover, main .shopping-cart .items .second-item .quantity-selector i:hover {
+  color: red;
+}
+main .shopping-cart .items .first-item .quantity-selector i:active, main .shopping-cart .items .second-item .quantity-selector i:active {
+  color: white;
+}
+main .shopping-cart .price {
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+main .payment {
+  background-color: rgb(227, 226, 226);
+  padding: 1em;
+  border-radius: 10px;
+}
+main .payment .cardoption div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .payment .cardoption div p {
+  padding: 0 3em;
+}
+main .payment .cardoption div img {
+  padding: 0 3em;
+  width: 70px;
+  height: 40px;
+}
+main .payment .carddetail {
+  padding: 2em 0;
+}
+main .payment .carddetail div {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0;
+}
+main .payment .carddetail div label {
+  width: 200px;
+  padding: 0 1em;
+}
+main .payment .carddetail div .expiry-date {
+  width: 200px;
+}
+main .payment .carddetail .CVC {
+  align-items: center;
+}
+main .payment .carddetail .CVC .form-control1 {
+  width: 30px;
+}
+main .payment .carddetail .CVC p {
+  margin: 0;
+  font-size: 10px;
+  color: green;
+  padding: 0 1rem;
+}
+
+footer .backbutton {
+  padding-top: 2em;
+  height: 200px;
+}
+footer .backbutton a {
+  color: black;
+  text-decoration: none;
+  font-size: 1em;
+}
+footer .backbutton a:hover {
+  color: red;
+}
+footer .backbutton a:active {
+  color: goldenrod;
+}
+footer .footerbar-box {
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1em;
+  margin: auto;
+  width: 90%;
+}
+footer .footerbar-box .footerbar {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+footer .footerbar-box a {
+  text-decoration: none;
+  background-color: rgb(207, 204, 204);
+  padding: 0.5em;
+  border-radius: 50%;
+  color: red;
+}
+footer .footerbar-box a:hover {
+  background-color: red;
+  color: black;
+}
+footer .footerbar-box a:active {
+  background-color: goldenrod;
+}
+footer .footerbar-box .order a {
+  border-radius: 30px;
+  padding: 0.5em;
+  font-size: 20px;
+}
+
+@media (min-width: 800px) {
+  header .logo img {
+    width: 200px;
+    height: 140px;
+  }
+
+  main {
+    display: inline-flex;
+    width: 100%;
+  }
+  main h3 {
+    font-size: 1.5em;
+  }
+  main label {
+    font-size: 1em;
+  }
+  main .shopping-cart {
+    width: 50%;
+  }
+  main .payment {
+    width: 50%;
+  }
+
+  footer .backbutton a {
+    font-size: 1.2em;
+  }
+  footer a {
+    font-size: 1.2em;
+  }
+}/*# sourceMappingURL=checkout.css.map */

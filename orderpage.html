@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1d19d1619d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./orderpage.js" defer></script>
+    <link rel="stylesheet" href="./orderpage.css" />
+    <title>order page</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./photos/Daruma.png" alt="logo" />
+      </div>
+      <div class="photos">
+        <div class="slider">
+          <div class="slides">
+            <img id="images" class="photowrapper active-image" src="./photos/promotion1.jpg" alt="kids welcome" />
+            <img id="images" class="photowrapper" src="./photos/promotion.png" alt="enviroment" />
+            <img id="images" class="photowrapper" src="./photos/promotion2.jpg" alt="discounts" />
+          </div>
+          <div class="dots">
+            
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="menu">
+        <div class="speical">
+          <button type="button" class="menu-btn active-btn" id="special"><img src="./photos/today speical.jpg" alt="today speical" />Today's speical</button>
+        </div>
+        <div type="button" class="speical" data-filter="food1">
+          <button class="menu-btn"><img src="./photos/sushi plate 1.png" alt="today speical" />$4.00</button>
+        </div>
+        <div class="food2">
+          <button class="menu-btn"><img src="./photos/sushi plate 2.png" alt="today speical" />$4.50</button>
+        </div>
+        <div class="food3">
+          <button class="menu-btn"><img src="./photos/sushi plate 3.png" alt="today speical" />$5.00</button>
+        </div>
+        <div class="food4">
+          <button class="menu-btn"><img src="./photos/sushi plate 4.png" alt="today speical" />$5.50</button>
+        </div>
+        <div class="food5">
+          <button class="menu-btn"><img src="./photos/sushi plate 5.png" alt="today speical" />$6.00</button>
+        </div>
+        <div class="gluten-free">
+          <button class="menu-btn"><img src="./photos/gluten free.jpg" alt="today speical" />Gluten free</button>
+        </div>
+        <div class="vegetarian">
+          <button class="menu-btn"><img src="./photos/vegetarian.jpg" alt="today speical" />Vegetarian</button>
+        </div>
+        <div class="kids-meal">
+          <button class="menu-btn"><img src="./photos/pexels-ryutaro-tsukata-6249464.jpg" alt="today speical" />Kids meal</button>
+        </div>
+      </div>
+      <div class="menu-sushi">
+        <div class="menu-sushi__card">
+          <div class="chicken-sushi">
+            <img src="./photos/sushi 1.png" alt="chicken sushi" />
+            <h3>$ 7.50</h3>
+            <p>chicken, capsicum, avocado, rice, sesame and mayo sause</p>
+          </div>
+          <div class="quantity-button">
+            <div class="quantity-button__number">
+              <input type="button" value="-" class="minus" /><input
+                type="number"
+                step="1"
+                min="1"
+                max=""
+                name="quantity"
+                value="1"
+                title="Qty"
+                class="input-text qty text"
+                size="4"
+                pattern=""
+                inputmode=""
+              /><input type="button" value="+" class="plus" />
+            </div>
+            <div class="add-button">
+              <button>add</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-sushi__card">
+          <div class="takoyaki">
+            <img src="./photos/sushi 3.png" alt="chicken sushi" />
+            <h3>$ 6.00</h3>
+            <p>
+              cabbage, octopus, flour, egg, tomato sause, mayo sause, green
+              laver and dried bonito
+            </p>
+          </div>
+          <div class="quantity-button">
+            <div class="quantity-button__number">
+              <input type="button" value="-" class="minus" /><input
+                type="number"
+                step="1"
+                min="1"
+                max=""
+                name="quantity"
+                value="1"
+                title="Qty"
+                class="input-text qty text"
+                size="4"
+                pattern=""
+                inputmode=""
+              /><input type="button" value="+" class="plus" />
+            </div>
+            <div class="add-button">
+              <button>add</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-sushi__card" data-item="todayspecial">
+          <div class="eal-sushi">
+            <img src="./photos/sushi 2.png" alt="chicken sushi" />
+            <h3>$ 8.00</h3>
+            <p>eal, lettcure, avocado, rice, sesame and mayo sause</p>
+          </div>
+          <div class="quantity-button">
+            <div class="quantity-button__number">
+              <input type="button" value="-" class="minus" /><input
+                type="number"
+                step="1"
+                min="1"
+                max=""
+                name="quantity"
+                value="1"
+                title="Qty"
+                class="input-text qty text"
+                size="4"
+                pattern=""
+                inputmode=""
+              /><input type="button" value="+" class="plus" />
+            </div>
+            <div class="add-button">
+              <button>add</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-sushi__card" data-item="todayspecial">
+          <div class="california">
+            <img src="./photos/sushi 4.png" alt="chicken sushi" />
+            <h3>$ 8.00</h3>
+            <p>grilled salmon, avocado, cucumber, rice, and mayo sause</p>
+          </div>
+          <div class="quantity-button">
+            <div class="quantity-button__number">
+              <input type="button" value="-" class="minus" /><input
+                type="number"
+                step="1"
+                min="1"
+                max=""
+                name="quantity"
+                value="1"
+                title="Qty"
+                class="input-text qty text"
+                size="4"
+                pattern=""
+                inputmode=""
+              /><input type="button" value="+" class="plus" />
+            </div>
+
+            <div class="add-button">
+              <button>add</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-sushi__card" data-item="food1">
+          <div class="tunasushi">
+            <img src="./photos/four 1.png" alt="chicken sushi" />
+            <h3>$ 4.00</h3>
+            <p>tuna, rice and mayo sauce</p>
+          </div>
+          <div class="quantity-button">
+            <div class="quantity-button__number">
+              <input type="button" value="-" class="minus" /><input
+                type="number"
+                step="1"
+                min="1"
+                max=""
+                name="quantity"
+                value="1"
+                title="Qty"
+                class="input-text qty text"
+                size="4"
+                pattern=""
+                inputmode=""
+              /><input type="button" value="+" class="plus" />
+            </div>
+            <div class="add-button">
+              <button>add</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-sushi__card" data-item="food1">
+          <div class="salmonsushi">
+            <img src="./photos/four 2.png" alt="chicken sushi" />
+            <h3>$ 4.00</h3>
+            <p>king fish, rice and mayo sause</p>
+          </div>
+          <div class="quantity-button">
+            <div class="quantity-button__number">
+              <input type="button" value="-" class="minus" /><input
+                type="number"
+                step="1"
+                min="1"
+                max=""
+                name="quantity"
+                value="1"
+                title="Qty"
+                class="input-text qty text"
+                size="4"
+                pattern=""
+                inputmode=""
+              /><input type="button" value="+" class="plus" />
+            </div>
+            <div class="add-button">
+              <button>add</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-sushi__card" data-item="food1">
+          <div class="fishshushi">
+            <img src="./photos/four 3.png" alt="chicken sushi" />
+            <h3>$ 4.00</h3>
+            <p>salmon, rice and mayo sause</p>
+          </div>
+          <div class="quantity-button">
+            <div class="quantity-button__number">
+              <input type="button" value="-" class="minus" /><input
+                type="number"
+                step="1"
+                min="1"
+                max=""
+                name="quantity"
+                value="1"
+                title="Qty"
+                class="input-text qty text"
+                size="4"
+                pattern=""
+                inputmode=""
+              /><input type="button" value="+" class="plus" />
+            </div>
+            <div class="add-button">
+              <button>add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="shopping-cart">
+        <div class="title"><h3>My Order</h3></div>
+        <div class="items">
+          <div class="first-item">
+            <img src="./photos/sushi 1.png" alt="sushi">
+            <span>$8.00</span>
+            <div class="quantity-selector">
+              <div class="quantity-selector__number">
+                <input type="button" value="-" class="minus" /><input
+                  type="number"
+                  step="1"
+                  min="1"
+                  max=""
+                  name="quantity"
+                  value="1"
+                  title="Qty"
+                  class="input-text qty text"
+                  size="4"
+                  pattern=""
+                  inputmode=""
+                /><input type="button" value="+" class="plus" />
+              </div>
+              <i class="fas fa-times fa-lg"></i>
+            </div>
+          </div>
+          <div class="second-item">
+            <img src="./photos/sushi 2.png" alt="sushi">
+            <span>$8.00</span>
+            <div class="quantity-selector">
+              <div class="quantity-selector__number">
+                <input type="button" value="-" class="minus" /><input
+                  type="number"
+                  step="1"
+                  min="1"
+                  max=""
+                  name="quantity"
+                  value="1"
+                  title="Qty"
+                  class="input-text qty text"
+                  size="4"
+                  pattern=""
+                  inputmode=""
+                /><input type="button" value="+" class="plus" />
+              </div>
+              <i class="fas fa-times fa-lg"></i>
+            </div>
+          </div>
+        </div>
+        <div class="price">
+          <h3>Total:</h3>
+          <h3>$16.00</h3>
+        </div>
+        <div class="checkout">
+          <a href="./checkout.html">Checkout</a>
+        </div>
+        
+      </div>
+      <div class="footerbar">
+        <div class="homebutton" style="font-size: 1.3em;">
+          <a href="./"><i class="fas fa-home"></i></a>
+        </div>
+        <div class="search" style="font-size: 1.3em;">
+          <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+        <div class="cart" id="cart" style="font-size: 1.3em;">
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <div class="help" style="font-size: 1.3em;">
+          <a href="./help.html"><i class="fas fa-bell"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

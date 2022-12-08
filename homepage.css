@@ -1,0 +1,88 @@
+/*mobile version*/
+body, html {
+  background-color: #efedec;
+  margin: 0;
+  width: 100vw;
+}
+
+header {
+  margin-top: 200px;
+}
+header .logo {
+  text-align: center;
+  padding: 2em;
+  background-color: red;
+}
+header .logo img {
+  width: 100px;
+  height: 80px;
+}
+
+main {
+  text-align: center;
+}
+main h1 {
+  font-family: "roboto", sans-serif;
+  font-size: 1.5em;
+}
+main button {
+  padding: 0.5em;
+  text-align: center;
+  background-color: #3C3B3B;
+  border-radius: 20px;
+  border: none;
+}
+main button:hover {
+  background-color: red;
+}
+main button:active {
+  background-color: black;
+}
+main button a {
+  text-decoration: none;
+  font-family: "roboto", sans-serif;
+  color: white;
+  padding: 2rem;
+  font-size: 1.2em;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 30%;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+footer a {
+  color: rgb(57, 57, 235);
+}
+footer a:hover {
+  color: red;
+}
+footer a:active {
+  color: goldenrod;
+}
+
+/*tablet version*/
+@media (min-width: 800px) {
+  header .logo img {
+    width: 180px;
+    height: 160px;
+  }
+  main h1 {
+    font-size: 1.8em;
+  }
+  main button a {
+    font-size: 1.5em;
+  }
+  footer .social-media {
+    max-width: 20%;
+  }
+  footer .social-media a {
+    font-size: 1.8em;
+  }
+}/*# sourceMappingURL=homepage.css.map */
